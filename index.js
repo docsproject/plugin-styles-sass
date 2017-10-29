@@ -36,7 +36,9 @@ module.exports = {
                     book.log.info.ln('compile sass file: ', filename);
 
                     // Temporary CSS file
-                    var tmpfile = type + '-' + Date.now() + '.css';
+                    //var tmpfile = type + '-' + Date.now() + '.css';
+                    // JL Edit. Don't use date
+                    var tmpfile = type + '-' + 'docs' + '.css';
 
                     // Replace config
                     book.config.set('styles.' + type, tmpfile);
